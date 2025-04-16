@@ -44,15 +44,23 @@ import { RouterOutlet } from '@angular/router';
       id="minusText"
     />
 
+    <!-- property binding -->
+
+    <a [href]="link">Google.com</a>
+    <img [src]="imgUrl" alt="" />
+
     <router-outlet />
   `,
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title =
-    (document.getElementById('plusText') as HTMLInputElement).value ||
+    /* (document.getElementById('plusText') as HTMLInputElement).value || */
     'first-project-angular';
   counter = 0;
+  link = 'https://www.google.com';
+  imgUrl =
+    'https://th.bing.com/th/id/OIP.CkvQxlvUO1XWC_G8cwrttgHaDr?w=291&h=173&c=7&r=0&o=5&dpr=1.3&pid=1.7';
 
   constructor() {
     setInterval(() => {
