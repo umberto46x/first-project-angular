@@ -49,7 +49,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'first-project-angular';
+  title =
+    (document.getElementById('plusText') as HTMLInputElement).value ||
+    'first-project-angular';
   counter = 0;
 
   constructor() {
