@@ -43,6 +43,7 @@ import { RouterOutlet } from '@angular/router';
       name="minusText"
       id="minusText"
     />
+    <!-- event driven form e reactive form -->
 
     <!-- property binding -->
 
